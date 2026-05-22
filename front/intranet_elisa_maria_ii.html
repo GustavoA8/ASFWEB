@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INTRANET — UBS Elisa Maria II</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ════════════════════════════ HEADER ════════════════════════════ -->
+  <header class="header">
+    <a class="brand" onclick="goPage('inicio')">
+      <img style="max-width: 8%;" src="asf-removebg-preview.png  " alt="">
+      <div class="brand-text">
+        <span class="brand-name">INTRANET ELISA MARIA II</span>
+        <span class="brand-sub">UBS Elisa Maria II — Associação Saúde da Família</span>
+      </div>
+    </a>
+    <div class="header-right">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        Pesquisar no site
+      </div>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════ NAVBAR ════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <!-- Início -->
+    <div class="nav-item active" data-page="inicio" onclick="goPage('inicio')">Início</div>
+
+    <!-- Serviços & Produção -->
+    <div class="nav-dropdown">
+      <button class="nav-dropbtn">Serviços & Produção <span class="arrow">▼</span></button>
+      <div class="nav-dropdown-content">
+        <div class="nav-item" data-page="tutoriais" onclick="goPage('tutoriais')">Tutoriais em Vídeo</div>
+        <div class="nav-item" data-page="territorio" onclick="goPage('territorio')">Território</div>
+        <div class="nav-item" data-page="producao" onclick="goPage('producao')">Fechamento Produção 2025</div>
+        <div class="nav-item" data-page="telefones" onclick="goPage('telefones')">Telefones Úteis</div>
+      </div>
+    </div>
+
+    <!-- Espaço Profissional -->
+    <div class="nav-dropdown">
+      <button class="nav-dropbtn">Espaço Profissional <span class="arrow">▼</span></button>
+      <div class="nav-dropdown-content">
+        <div class="nav-item" data-page="espaco" onclick="goPage('espaco')">Espaço Funcionário</div>
+        <div class="nav-item" data-page="psicologia" onclick="goPage('psicologia')">Clínica de Psicologia</div>
+        <div class="nav-item" data-page="saude" onclick="goPage('saude')">Seja Dono da Sua Saúde</div>
+        <div class="nav-item" data-page="aniversario" onclick="goPage('aniversario')">Aniversariantes</div>
+      </div>
+    </div>
+
+    <!-- Institucional -->
+    <div class="nav-dropdown">
+      <button class="nav-dropbtn">Institucional <span class="arrow">▼</span></button>
+      <div class="nav-dropdown-content">
+        <div class="nav-item" data-page="missao" onclick="goPage('missao')">Missão e Visão</div>
+        <div class="nav-item" data-page="seguranca" onclick="goPage('seguranca')">Segurança da Informação</div>
+        <div class="nav-item" data-page="aconteceu" onclick="goPage('aconteceu')">Aconteceu no Elisa II</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════ PÁGINAS ════════════════════════════ -->
+
+  <!-- ── INÍCIO ── -->
+  <div class="page active" id="pg-inicio">
+    <div class="main">
+
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">UBS — Saúde da Família</span>
+          <h1>Bem-vindo ao INTRANET<br>UBS Elisa Maria II</h1>
+          <p>Av. General Penha Brasil, 2651 — Bloco 20 — Jd. dos Francos · São Paulo/SP</p>
+          <div class="hero-actions">
+            <button class="btn btn-green" onclick="goPage('producao')">Fechamento Produção 2025</button>
+            <a class="btn btn-outline-white" href="https://lookerstudio.google.com/s/kSRk7RGG6Fc" target="_blank"
+              rel="noopener">Painel de Produção ↗</a>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-num">12</div>
+            <div class="stat-label">Páginas ativas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">6</div>
+            <div class="stat-label">Tasks otimização</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2022</div>
+            <div class="stat-label">Desde</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">ASF</div>
+            <div class="stat-label">Organização</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <div class="section-title">Links da Unidade</div>
+          <div class="card">
+            <p class="label-mini">Canais de Comunicação ASF</p>
+            <a class="link-item" href="https://lookerstudio.google.com/s/kSRk7RGG6Fc" target="_blank"><span
+                class="link-dot"></span>Painel de Produção ↗</a>
+            <a class="link-item"
+              href="https://docs.google.com/spreadsheets/d/16RR93oftCf_HwgSDiR7a7Z479o3SIHsOuPSu8A99-ho/edit?usp=sharing"
+              target="_blank"><span class="link-dot"></span>Códigos Válidos ↗</a>
+            <a class="link-item" href="#" onclick="goPage('producao');return false;"><span
+                class="link-dot"></span>Produção 2025 (Quadro Histórico)</a>
+            <a class="link-item" href="http://portal.saudedafamilia.org/ASFPesquisa/" target="_blank"><span
+                class="link-dot"></span>Notificações de Incidentes ↗</a>
+            <a class="link-item"
+              href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTS7S0PNtq6ldLuMy5qvCc7ppmtYqmpJDeay9tLh4TyhqOQcVycq1SSYLpQLKpsd4zYFFqaWVrKKi_M/pub?gid=1036982012&single=true&output=pdf"
+              target="_blank"><span class="link-dot"></span>Reuniões Gerais 2025 ↗</a>
+            <a class="link-item"
+              href="https://lookerstudio.google.com/embed/u/0/reporting/6e486592-03f9-4856-9f16-099adacba0db/page/p_2ce3hm3kwd"
+              target="_blank"><span class="link-dot"></span>Relatório por Idade ↗</a>
+            <a class="link-item"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScyAi8FkZ9QKPuhp3hT5o93SmapsVHcFh4o_IoH3g23QhutRg/viewform"
+              target="_blank"><span class="link-dot"></span>Solicite Manutenção ↗</a>
+            <a class="link-item"
+              href="https://script.google.com/macros/s/AKfycbx_i3jmiJw-WCem_1BwaOjSOH1WIs7LGUbDLyeGyCP2BsDNxpOQcG13u_Mr7_VL13k/exec"
+              target="_blank"><span class="link-dot"></span>Pesquisa do Território ↗</a>
+            <a class="link-item" href="#" onclick="goPage('tutoriais');return false;"><span
+                class="link-dot"></span>Tutoriais em Vídeo</a>
+          </div>
+
+          <div class="section-title">Links ASF</div>
+          <div class="card">
+            <a class="link-item" href="https://www.saudedafamilia.org/" target="_blank"><span
+                class="link-dot"></span>Site — ASF ↗</a>
+            <a class="link-item" href="http://portal.saudedafamilia.org/PORTALASF/Login.aspx" target="_blank"><span
+                class="link-dot"></span>Portal RH — ASF ↗</a>
+            <a class="link-item" href="http://portal.saudedafamilia.org/ASF/Home/Index" target="_blank"><span
+                class="link-dot"></span>Portal de Serviços — ASF ↗</a>
+            <a class="link-item" href="https://www.saudedafamilia.org/Home/Enfermagem" target="_blank"><span
+                class="link-dot"></span>Manuais e POPs de Enfermagem ↗</a>
+            <a class="link-item" href="https://saudedafamilia.org/Transparencia/DuvidasFrequentesSAF"
+              target="_blank"><span class="link-dot"></span>Dúvidas Frequentes SAF ↗</a>
+          </div>
+
+          <div class="section-title">Acesse os Sistemas</div>
+          <div class="btn-group">
+            <a class="btn btn-green" href="https://saude.fastmedic.com.br/asfsaopaulo" target="_blank">Fastmedic ASF
+              ↗</a>
+            <a class="btn btn-green" href="https://siga.saude.prefeitura.sp.gov.br/sms/login.do?method=logoff"
+              target="_blank">SIGA Saúde ↗</a>
+            <a class="btn btn-green" href="https://buscasaude.prefeitura.sp.gov.br/" target="_blank">Busca Saúde ↗</a>
+            <a class="btn btn-navy" href="http://172.17.250.105:8080/filah" target="_blank">Fila H ↗</a>
+          </div>
+
+          <div class="info-block">
+            <h3>📍 Saúde Ocupacional — ASF</h3>
+            <p>Rua Itápolis, 1326 — Pacaembu — CEP 01245-000<br>
+              Atendimento: 08h–12h e 13h–17h, segunda a sexta-feira<br>
+              Levar crachá e atestado original em até 72 horas úteis da data de emissão.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-title">Avisos</div>
+
+          <div class="notice">
+            <span class="notice-tag">Contencioso Trabalhista</span>
+            <p>22ª edição — "Valores de ética, respeito e compromisso institucional". Profissionais, acessem o
+              informativo completo.</p>
+            <div class="notice-action">
+              <a class="btn btn-green btn-sm"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdsy1M9MtdnxnPOBzyXsY5u_iSV0Q4iu7Yv8FU4Cr7qBQOpcw/viewform"
+                target="_blank">Acessar Informativo ↗</a>
+            </div>
+          </div>
+
+          <div class="notice">
+            <span class="notice-tag">Trilha do Funcionário</span>
+            <p>Seu espaço exclusivo no Portal de Serviços ASF — pensado para apoiar cada passo da sua jornada
+              profissional.</p>
+            <div class="notice-action">
+              <a class="btn btn-green btn-sm" href="http://portal.saudedafamilia.org/ASF/Home/Index"
+                target="_blank">Acessar Portal de Serviços ↗</a>
+            </div>
+          </div>
+
+          <div class="notice">
+            <span class="notice-tag">Redes Sociais e Ambiente</span>
+            <p>Reforçamos as orientações sobre o uso responsável do ambiente de trabalho e das redes sociais. Leia as
+              diretrizes.</p>
+            <div class="notice-action">
+              <a class="btn btn-green btn-sm" href="http://portal.saudedafamilia.org/ASF/Home/Index" target="_blank">Ver
+                Orientações ↗</a>
+            </div>
+          </div>
+
+          <div class="notice">
+            <span class="notice-tag">Contencioso Trabalhista — Ed. 19</span>
+            <p>19ª edição — "Atos de indisciplina – regras e convivência". Acesse e fique por dentro das diretrizes.</p>
+            <div class="notice-action">
+              <a class="btn btn-green btn-sm" href="http://portal.saudedafamilia.org/ASF/Home/Index"
+                target="_blank">Acessar Informativo ↗</a>
+            </div>
+          </div>
+
+          <div class="notice">
+            <span class="notice-tag">Clínica de Psicologia ASF</span>
+            <p>Contatos: <strong>3662-4275</strong> / <strong>97527-4436</strong> / <strong>99250-8175</strong></p>
+            <div class="notice-action">
+              <button class="btn btn-green btn-sm" onclick="goPage('psicologia')">Saiba Mais →</button>
+            </div>
+          </div>
+
+          <div class="notice">
+            <span class="notice-tag">Inscrição — Curso</span>
+            <p>Curso aberto para todos os funcionários da ASF. Antes de se inscrever, verifique disponibilidade com sua
+              chefia imediata.</p>
+            <div class="notice-action">
+              <a class="btn btn-green btn-sm"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScw9CqADwsgYvRv-4IwQAL7p-vcW1R8c3NBMxqVO3jIVmA_Rw/viewform"
+                target="_blank">Link para Inscrição ↗</a>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+          <div class="btn-group">
+            <a class="btn btn-green"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe1J32KYyP0vvBQekujlsO9l6V8b3mlJfW5ge34xovFd7Z3dQ/viewform"
+              target="_blank">💬 Deixar Sugestão ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── TUTORIAIS ── -->
+  <div class="page" id="pg-tutoriais">
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">Capacitação</span>
+          <h1>Tutoriais em Vídeo</h1>
+          <p>Aprenda a usar os sistemas da unidade passo a passo</p>
+        </div>
+      </div>
+      <div class="alert">
+        <span class="alert-icon">ℹ️</span>
+        <span>Os vídeos estão armazenados no Google Drive. Clique em "Assistir" para abrir em uma nova aba.
+          <strong>Nenhum vídeo é carregado diretamente na página</strong> — isso garante um carregamento mais
+          rápido.</span>
+      </div>
+      <div class="grid-2">
+        <div class="video-card">
+          <div class="video-thumb">
+            <button class="play-btn"
+              onclick="window.open('https://drive.google.com/file/d/1mXkRnqcC8wwDzUkpJ5pXnaUui_L8RRW_/view','_blank')">
+              <div class="play-icon"></div>
+            </button>
+          </div>
+          <div class="video-info">
+            <div class="video-title">Relatório de Cadastro de Usuários</div>
+            <div class="video-desc">Cadastro por Idade — Passo a passo completo</div>
+            <a class="btn btn-green btn-sm"
+              href="https://drive.google.com/file/d/1mXkRnqcC8wwDzUkpJ5pXnaUui_L8RRW_/view" target="_blank">Assistir no
+              Drive ↗</a>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-thumb">
+            <button class="play-btn"
+              onclick="window.open('https://drive.google.com/file/d/16OH_33ufA7rWOTT4LF8O9ZPkL-j_igmp/view','_blank')">
+              <div class="play-icon"></div>
+            </button>
+          </div>
+          <div class="video-info">
+            <div class="video-title">Ativação do Certificado Digital</div>
+            <div class="video-desc">Como ativar e configurar seu certificado passo a passo</div>
+            <a class="btn btn-green btn-sm"
+              href="https://drive.google.com/file/d/16OH_33ufA7rWOTT4LF8O9ZPkL-j_igmp/view" target="_blank">Assistir no
+              Drive ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TERRITÓRIO ── -->
+  <div class="page" id="pg-territorio">
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">Território</span>
+          <h1>Pesquisa de Endereços</h1>
+          <p>Consulte o mapa territorial da UBS Elisa Maria II</p>
+        </div>
+      </div>
+      <div class="info-block">
+        <h3>Como usar a ferramenta de território</h3>
+        <p>Acesse a ferramenta de pesquisa abaixo para localizar endereços dentro da área de cobertura da UBS. A
+          ferramenta abre em uma nova aba para melhor desempenho — sem carregamento pesado na página.</p>
+      </div>
+      <div class="btn-group">
+        <a class="btn btn-green"
+          href="https://script.google.com/macros/s/AKfycbx_i3jmiJw-WCem_1BwaOjSOH1WIs7LGUbDLyeGyCP2BsDNxpOQcG13u_Mr7_VL13k/exec"
+          target="_blank">🗺️ Abrir Pesquisa de Território ↗</a>
+        <a class="btn btn-navy" href="https://www.google.com/maps/search/Jd.+dos+Francos,+São+Paulo" target="_blank">Ver
+          Mapa no Google Maps ↗</a>
+      </div>
+      <div class="card">
+        <div class="section-title">Área de Cobertura</div>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:8px;">Região atendida pela UBS Elisa Maria II — Jardim
+          dos Francos, São Paulo/SP.</p>
+        <div
+          style="background:#EEF3FA;border-radius:6px;height:100px;display:flex;align-items:center;justify-content:center;color:var(--navy);font-family:Arial,sans-serif;font-weight:700;font-size:12px;gap:8px;">
+          <span>🗺️</span> Jd. dos Francos — Av. General Penha Brasil, 2651
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ACONTECEU ── -->
+  <div class="page" id="pg-aconteceu">
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">Notícias</span>
+          <h1>Aconteceu no Elisa II</h1>
+          <p>Fique por dentro das novidades e conquistas da nossa unidade</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="notice"><span class="notice-tag">Evento</span>
+          <p>Semana da Saúde — Atividades de prevenção realizadas com a comunidade do Jd. dos Francos.</p>
+          <p style="font-size:10px;color:var(--muted);margin-top:5px;">Maio 2025</p>
+        </div>
+        <div class="notice"><span class="notice-tag">Capacitação</span>
+          <p>Treinamento de Atualização em Prontuário Eletrônico — Equipe completa capacitada com sucesso.</p>
+          <p style="font-size:10px;color:var(--muted);margin-top:5px;">Abril 2025</p>
+        </div>
+        <div class="notice"><span class="notice-tag">Reconhecimento</span>
+          <p>UBS Elisa Maria II entre as melhores avaliadas no indicador de acolhimento da ASF em 2025.</p>
+          <p style="font-size:10px;color:var(--muted);margin-top:5px;">Março 2025</p>
+        </div>
+        <div class="notice"><span class="notice-tag">Manutenção</span>
+          <p>Reforma da sala de espera concluída — novo espaço mais confortável e acessível para os pacientes.</p>
+          <p style="font-size:10px;color:var(--muted);margin-top:5px;">Fevereiro 2025</p>
+        </div>
+        <div class="notice"><span class="notice-tag">Vacinação</span>
+          <p>Campanha de vacinação contra influenza encerrada com meta 100% atingida na área adscrita.</p>
+          <p style="font-size:10px;color:var(--muted);margin-top:5px;">Janeiro 2025</p>
+        </div>
+        <div class="notice"><span class="notice-tag">Aniversário</span>
+          <p>3 anos de UBS Elisa Maria II! Comemoramos mais um ano de saúde e cuidado para a comunidade.</p>
+          <p style="font-size:10px;color:var(--muted);margin-top:5px;">2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PRODUÇÃO ── -->
+  <div class="page" id="pg-producao">
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">Gestão</span>
+          <h1>Fechamento da Produção 2025</h1>
+          <p>Quadro histórico e relatórios de produção da unidade</p>
+        </div>
+      </div>
+      <div class="alert">
+        <span class="alert-icon">ℹ️</span>
+        <span>Os painéis abrem no Looker Studio e planilhas em nova aba — sem iframe embutido. Isso garante
+          <strong>carregamento muito mais rápido</strong> desta página.</span>
+      </div>
+      <div class="section-title">Acesso Rápido</div>
+      <div class="btn-group">
+        <a class="btn btn-green" href="https://lookerstudio.google.com/s/kSRk7RGG6Fc" target="_blank">📊 Painel de
+          Produção — Looker Studio ↗</a>
+        <a class="btn btn-green"
+          href="https://docs.google.com/spreadsheets/d/16RR93oftCf_HwgSDiR7a7Z479o3SIHsOuPSu8A99-ho/edit"
+          target="_blank">📋 Planilha Códigos Válidos ↗</a>
+        <a class="btn btn-green"
+          href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTS7S0PNtq6ldLuMy5qvCc7ppmtYqmpJDeay9tLh4TyhqOQcVycq1SSYLpQLKpsd4zYFFqaWVrKKi_M/pub?gid=1036982012&single=true&output=pdf"
+          target="_blank">📄 Reuniões Gerais 2025 (PDF) ↗</a>
+        <a class="btn btn-green"
+          href="https://lookerstudio.google.com/embed/u/0/reporting/6e486592-03f9-4856-9f16-099adacba0db/page/p_2ce3hm3kwd"
+          target="_blank">📈 Relatório por Idade ↗</a>
+      </div>
+      <div class="section-title">Status Mensal 2025</div>
+      <div class="grid-4">
+        <div class="month-card">
+          <div class="month-name">Janeiro</div>
+          <div class="month-status status-done">✔ Fechado</div>
+        </div>
+        <div class="month-card">
+          <div class="month-name">Fevereiro</div>
+          <div class="month-status status-done">✔ Fechado</div>
+        </div>
+        <div class="month-card">
+          <div class="month-name">Março</div>
+          <div class="month-status status-done">✔ Fechado</div>
+        </div>
+        <div class="month-card">
+          <div class="month-name">Abril</div>
+          <div class="month-status status-done">✔ Fechado</div>
+        </div>
+        <div class="month-card">
+          <div class="month-name">Maio</div>
+          <div class="month-status status-wip">⏳ Em andamento</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Junho</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Julho</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Agosto</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Setembro</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Outubro</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Novembro</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Dezembro</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ANIVERSARIANTES ── -->
+  <div class="page" id="pg-aniversario">
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">Pessoas</span>
+          <h1>Aniversariantes do Mês</h1>
+          <p>Celebrando nossos colegas — Maio 2025 🎉</p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="team-card">
+          <div class="avatar">MA</div>
+          <div class="team-name">Maria Aparecida</div>
+          <div class="team-role">Enfermagem — 05/Maio</div>
+        </div>
+        <div class="team-card">
+          <div class="avatar">JR</div>
+          <div class="team-name">José Roberto</div>
+          <div class="team-role">ACS — 12/Maio</div>
+        </div>
+        <div class="team-card">
+          <div class="avatar">FS</div>
+          <div class="team-name">Fernanda Silva</div>
+          <div class="team-role">Recepção — 18/Maio</div>
+        </div>
+        <div class="team-card">
+          <div class="avatar">CT</div>
+          <div class="team-name">Carlos Teixeira</div>
+          <div class="team-role">Médico — 23/Maio</div>
+        </div>
+        <div class="team-card">
+          <div class="avatar">LO</div>
+          <div class="team-name">Luciana Oliveira</div>
+          <div class="team-role">Odontologia — 28/Maio</div>
+        </div>
+        <div class="team-card">
+          <div class="avatar">UR</div>
+          <div class="team-name">Uashington Ribeiro</div>
+          <div class="team-role">ATAII — 31/Maio</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ESPAÇO FUNCIONÁRIO ── -->
+  <div class="page" id="pg-espaco">
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">RH</span>
+          <h1>Espaço Funcionário ASF</h1>
+          <p>Recursos, benefícios e acesso rápido para os profissionais da unidade</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <div class="section-title">Portais e Sistemas</div>
+          <div class="btn-group">
+            <a class="btn btn-green" href="http://portal.saudedafamilia.org/PORTALASF/Login.aspx" target="_blank">Portal
+              RH — ASF ↗</a>
+            <a class="btn btn-green" href="http://portal.saudedafamilia.org/ASF/Home/Index" target="_blank">Portal de
+              Serviços ↗</a>
+            <a class="btn btn-green" href="http://portal.saudedafamilia.org/ASF/Home/Index" target="_blank">Trilha do
+              Funcionário ↗</a>
+            <a class="btn btn-green" href="https://www.saudedafamilia.org/Home/Enfermagem" target="_blank">Manuais e
+              POPs ↗</a>
+          </div>
+          <div class="info-block">
+            <h3>📍 Saúde Ocupacional</h3>
+            <p>Rua Itápolis, 1326 — Pacaembu — CEP 01245-000<br>
+              Segunda a sexta-feira: 08h–12h e 13h–17h<br>
+              Levar crachá e atestado original em até 72 horas úteis da data de emissão do atestado.</p>
+          </div>
+        </div>
+        <div>
+          <div class="section-title">Documentos e Formulários</div>
+          <div class="card">
+            <a class="link-item"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScyAi8FkZ9QKPuhp3hT5o93SmapsVHcFh4o_IoH3g23QhutRg/viewform"
+              target="_blank"><span class="link-dot"></span>Solicitar Manutenção (Formulário) ↗</a>
+            <a class="link-item" href="http://portal.saudedafamilia.org/ASFPesquisa/" target="_blank"><span
+                class="link-dot"></span>Notificações de Incidentes ↗</a>
+            <a class="link-item" href="https://saudedafamilia.org/Transparencia/DuvidasFrequentesSAF"
+              target="_blank"><span class="link-dot"></span>Dúvidas Frequentes SAF ↗</a>
+            <a class="link-item"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdsy1M9MtdnxnPOBzyXsY5u_iSV0Q4iu7Yv8FU4Cr7qBQOpcw/viewform"
+              target="_blank"><span class="link-dot"></span>Contencioso Trabalhista — Ed. 22 ↗</a>
+            <a class="link-item"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe1J32KYyP0vvBQekujlsO9l6V8b3mlJfW5ge34xovFd7Z3dQ/viewform"
+              target="_blank"><span class="link-dot"></span>Deixar uma Sugestão ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PSICOLOGIA ── -->
+  <div class="page" id="pg-psicologia">
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">Bem-estar</span>
+          <h1>Clínica de Psicologia ASF</h1>
+          <p>Suporte psicológico sigiloso e gratuito para os profissionais da unidade</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <div class="info-block">
+            <h3>📞 Contatos</h3>
+            <p><strong>3662-4275</strong><br><strong>97527-4436</strong><br><strong>99250-8175</strong></p>
+          </div>
+          <div class="info-block">
+            <h3>Como agendar</h3>
+            <p>Entre em contato pelos telefones acima ou acesse o formulário de agendamento online. O atendimento é
+              <strong>sigiloso e gratuito</strong> para todos os funcionários ASF.</p>
+          </div>
+          <a class="btn btn-green"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdsy1M9MtdnxnPOBzyXsY5u_iSV0Q4iu7Yv8FU4Cr7qBQOpcw/viewform"
+            target="_blank">📅 Agendar Atendimento ↗</a>
+        </div>
+        <div>
+          <div class="section-title">Serviços Disponíveis</div>
+          <div class="card">
+            <div class="link-item"><span class="link-dot"></span>Atendimento psicológico individual</div>
+            <div class="link-item"><span class="link-dot"></span>Grupo de apoio ao trabalhador</div>
+            <div class="link-item"><span class="link-dot"></span>Orientação em saúde mental</div>
+            <div class="link-item"><span class="link-dot"></span>Prevenção e cuidado com burnout</div>
+            <div class="link-item"><span class="link-dot"></span>Acompanhamento de afastamentos</div>
+            <div class="link-item"><span class="link-dot"></span>Suporte em situações de crise</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SAÚDE ── -->
+  <div class="page" id="pg-saude">
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">Prevenção</span>
+          <h1>Seja Dono da Sua Saúde</h1>
+          <p>Informações e recursos para cuidar do seu bem-estar</p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="info-block">
+          <h3>❤️ Exames Preventivos</h3>
+          <p>Mantenha seus exames em dia. Consulte o calendário de prevenção da ASF e agende pelo Portal de Serviços.
+          </p>
+          <div style="margin-top:10px"><a class="btn btn-green btn-sm"
+              href="http://portal.saudedafamilia.org/ASF/Home/Index" target="_blank">Ver Calendário ↗</a></div>
+        </div>
+        <div class="info-block">
+          <h3>🏃 Atividade Física</h3>
+          <p>Pausas ativas e orientações de exercícios para profissionais da saúde. Pequenos movimentos fazem grande
+            diferença.</p>
+          <div style="margin-top:10px"><a class="btn btn-green btn-sm"
+              href="http://portal.saudedafamilia.org/ASF/Home/Index" target="_blank">Ver Dicas ↗</a></div>
+        </div>
+        <div class="info-block">
+          <h3>🧠 Saúde Mental</h3>
+          <p>Recursos de apoio psicológico e autocuidado disponíveis gratuitamente para todos os funcionários ASF.</p>
+          <div style="margin-top:10px"><button class="btn btn-green btn-sm" onclick="goPage('psicologia')">Clínica de
+              Psicologia →</button></div>
+        </div>
+      </div>
+      <div class="section-title">Links de Saúde</div>
+      <div class="btn-group">
+        <a class="btn btn-green" href="https://buscasaude.prefeitura.sp.gov.br/" target="_blank">Busca Saúde SP ↗</a>
+        <a class="btn btn-green" href="https://prefeitura.sp.gov.br/web/saude" target="_blank">Secretaria Municipal de
+          Saúde ↗</a>
+        <a class="btn btn-navy" href="http://portal.saudedafamilia.org/ASF/Home/Index" target="_blank">Portal de
+          Serviços ASF ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SEGURANÇA ── -->
+  <div class="page" id="pg-seguranca">
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">TI</span>
+          <h1>Segurança da Informação</h1>
+          <p>Boas práticas para proteger dados, sistemas e a privacidade dos pacientes</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <div class="section-title">Regras Essenciais</div>
+          <div class="card">
+            <div class="link-item"><span class="link-dot"></span>Não compartilhe sua senha com ninguém</div>
+            <div class="link-item"><span class="link-dot"></span>Bloqueie o computador ao se ausentar</div>
+            <div class="link-item"><span class="link-dot"></span>Não use redes Wi-Fi públicas para acessar sistemas
+            </div>
+            <div class="link-item"><span class="link-dot"></span>Reporte e-mails suspeitos imediatamente ao TI</div>
+            <div class="link-item"><span class="link-dot"></span>Use somente dispositivos autorizados pela ASF</div>
+            <div class="link-item"><span class="link-dot"></span>Mantenha o sistema operacional sempre atualizado</div>
+            <div class="link-item"><span class="link-dot"></span>Não fotografe telas com dados de pacientes</div>
+            <div class="link-item"><span class="link-dot"></span>Acesse apenas sistemas necessários para sua função
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="info-block danger">
+            <h3>🚨 Em caso de incidente</h3>
+            <p>Registre o ocorrido imediatamente pelo formulário de Notificação de Incidentes. Não tente resolver
+              sozinho. Contate o responsável de TI da unidade.</p>
+            <div style="margin-top:10px"><a class="btn btn-green btn-sm"
+                href="http://portal.saudedafamilia.org/ASFPesquisa/" target="_blank">Notificar Incidente ↗</a></div>
+          </div>
+          <div class="info-block">
+            <h3>📱 Redes Sociais</h3>
+            <p>Não divulgue informações de pacientes ou da unidade em redes sociais. Siga as orientações do Contencioso
+              Trabalhista sobre uso responsável.</p>
+          </div>
+          <div class="info-block">
+            <h3>🔒 Contato TI</h3>
+            <p>Responsável: Uashington Ribeiro — ATAII<br>
+              E-mail: uribeiro@norte.saudedafamilia.org</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TELEFONES ── -->
+  <div class="page" id="pg-telefones">
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">Contatos</span>
+          <h1>Telefones Úteis</h1>
+          <p>Ramais e contatos da unidade, ASF e serviços de emergência</p>
+        </div>
+      </div>
+      <div class="section-title">Contatos da Unidade</div>
+      <div class="grid-3">
+        <div class="phone-card">
+          <div class="phone-dept">Recepção</div>
+          <div class="phone-num">3xxx-xxxx</div>
+          <div class="phone-ext">Ramal 100</div>
+        </div>
+        <div class="phone-card">
+          <div class="phone-dept">Enfermagem</div>
+          <div class="phone-num">3xxx-xxxx</div>
+          <div class="phone-ext">Ramal 101</div>
+        </div>
+        <div class="phone-card">
+          <div class="phone-dept">Médico</div>
+          <div class="phone-num">3xxx-xxxx</div>
+          <div class="phone-ext">Ramal 102</div>
+        </div>
+        <div class="phone-card">
+          <div class="phone-dept">Odontologia</div>
+          <div class="phone-num">3xxx-xxxx</div>
+          <div class="phone-ext">Ramal 103</div>
+        </div>
+        <div class="phone-card">
+          <div class="phone-dept">Clínica de Psicologia</div>
+          <div class="phone-num">3662-4275</div>
+          <div class="phone-ext">97527-4436 / 99250-8175</div>
+        </div>
+        <div class="phone-card">
+          <div class="phone-dept">TI — Uashington Ribeiro</div>
+          <div class="phone-num">uribeiro@norte...</div>
+          <div class="phone-ext">saudedafamilia.org</div>
+        </div>
+      </div>
+      <div class="section-title">Saúde Ocupacional e ASF</div>
+      <div class="grid-3">
+        <div class="phone-card">
+          <div class="phone-dept">Saúde Ocupacional — ASF</div>
+          <div class="phone-num">3xxx-xxxx</div>
+          <div class="phone-ext">Rua Itápolis, 1326 — Pacaembu</div>
+        </div>
+        <div class="phone-card">
+          <div class="phone-dept">Portal RH — ASF</div>
+          <div class="phone-num">Acesso Online</div>
+          <div class="phone-ext">
+            <div style="margin-top:6px"><a class="btn btn-green btn-sm"
+                href="http://portal.saudedafamilia.org/PORTALASF/Login.aspx" target="_blank">Acessar ↗</a></div>
+          </div>
+        </div>
+        <div class="phone-card">
+          <div class="phone-dept">Portal de Serviços — ASF</div>
+          <div class="phone-num">Acesso Online</div>
+          <div class="phone-ext">
+            <div style="margin-top:6px"><a class="btn btn-green btn-sm"
+                href="http://portal.saudedafamilia.org/ASF/Home/Index" target="_blank">Acessar ↗</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-title">Emergências</div>
+      <div class="grid-3">
+        <div class="phone-card">
+          <div class="phone-dept">SAMU</div>
+          <div class="phone-num" style="font-size:22px">192</div>
+          <div class="phone-ext">Urgência e Emergência</div>
+        </div>
+        <div class="phone-card">
+          <div class="phone-dept">Bombeiros</div>
+          <div class="phone-num" style="font-size:22px">193</div>
+          <div class="phone-ext">Resgate e Incêndio</div>
+        </div>
+        <div class="phone-card">
+          <div class="phone-dept">Polícia Militar</div>
+          <div class="phone-num" style="font-size:22px">190</div>
+          <div class="phone-ext">Segurança Pública</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MISSÃO ── -->
+  <div class="page" id="pg-missao">
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="hero-badge">Institucional</span>
+          <h1>Missão e Visão — ASF</h1>
+          <p>Os valores que guiam nossa atuação diária na UBS Elisa Maria II</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="info-block" style="border-left-color:var(--navy)">
+          <h3>🎯 Missão</h3>
+          <p>Promover saúde com qualidade, humanização e responsabilidade social, contribuindo para a melhoria da
+            qualidade de vida da população atendida pela UBS Elisa Maria II e região.</p>
+        </div>
+        <div class="info-block" style="border-left-color:var(--green)">
+          <h3>🔭 Visão</h3>
+          <p>Ser referência em atenção primária à saúde, reconhecida pela excelência no atendimento, inovação na gestão
+            e comprometimento com a saúde coletiva da comunidade do Jd. dos Francos.</p>
+        </div>
+      </div>
+      <div class="section-title">Nossos Valores</div>
+      <div class="grid-3">
+        <div class="value-card">
+          <span class="value-icon">❤️</span>
+          <div class="value-title">Humanização</div>
+          <div class="value-desc">Atendimento com respeito, empatia e acolhimento a cada paciente</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🛡️</span>
+          <div class="value-title">Integridade</div>
+          <div class="value-desc">Ética e transparência em todas as ações e decisões da equipe</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">👥</span>
+          <div class="value-title">Trabalho em Equipe</div>
+          <div class="value-desc">Colaboração, parceria e respeito entre todos os profissionais</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">📚</span>
+          <div class="value-title">Aprendizado Contínuo</div>
+          <div class="value-desc">Capacitação permanente para a melhoria contínua dos serviços</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🌱</span>
+          <div class="value-title">Responsabilidade Social</div>
+          <div class="value-desc">Compromisso com a comunidade e com o meio ambiente</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">✅</span>
+          <div class="value-title">Excelência</div>
+          <div class="value-desc">Busca constante pela qualidade em cada atendimento prestado</div>
+        </div>
+      </div>
+      <div style="margin-top:4px">
+        <a class="btn btn-green" href="https://www.saudedafamilia.org/" target="_blank">Saiba mais sobre a ASF ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════ FOOTER ════════════════════════════ -->
+  <footer class="footer">
+    <span>UBS Elisa Maria II — Desde 2022 · Av. General Penha Brasil, 2651 — Bloco 20 — Jd. dos Francos · São
+      Paulo/SP</span>
+    <span>Desenvolvido por Uashington Ribeiro — ATAII · <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSe1J32KYyP0vvBQekujlsO9l6V8b3mlJfW5ge34xovFd7Z3dQ/viewform"
+        target="_blank">Deixar Sugestão ↗</a></span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
