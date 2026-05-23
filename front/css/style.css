@@ -882,3 +882,14 @@
     margin-bottom: 8px;
     margin-top: 4px;
   }
+  #news-carousel{
+    max-width: 70%;
+    margin: auto;
+
+  }
+  #news-carousel .news-slide{
+    background-color: #212529;
+  }
+  #news-carousel .news-slide div{
+    color: #fff8e1 !important;
+  }
