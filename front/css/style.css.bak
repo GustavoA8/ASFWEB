@@ -1090,6 +1090,3 @@
     font-weight: 600;
     margin-top: auto;
   }
-/* ─── HEADER RIGHT (admin btn) ─── */
-.header { justify-content: space-between; }
-.header-right { display: flex; align-items: center; gap: 10px; }

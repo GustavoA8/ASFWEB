@@ -19,7 +19,6 @@
         <span class="brand-sub">UBS Elisa Maria II — Associação Saúde da Família</span>
       </div>
     </a>
-    <button class="admin-header-btn" onclick="openAdminLogin()">⚙️ Admin</button>
   </header>
 
   <!-- ════════════════════════════ NAVBAR ════════════════════════════ -->
@@ -152,7 +151,65 @@
 
         <div>
           <div class="section-title">Avisos</div>
-          <div id="avisos-container"></div>
+
+          <div class="notice">
+            <span class="notice-tag">Contencioso Trabalhista</span>
+            <p>22ª edição — "Valores de ética, respeito e compromisso institucional". Profissionais, acessem o
+              informativo completo.</p>
+            <div class="notice-action">
+              <a class="btn btn-green btn-sm"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdsy1M9MtdnxnPOBzyXsY5u_iSV0Q4iu7Yv8FU4Cr7qBQOpcw/viewform"
+                target="_blank">Acessar Informativo ↗</a>
+            </div>
+          </div>
+
+          <div class="notice">
+            <span class="notice-tag">Trilha do Funcionário</span>
+            <p>Seu espaço exclusivo no Portal de Serviços ASF — pensado para apoiar cada passo da sua jornada
+              profissional.</p>
+            <div class="notice-action">
+              <a class="btn btn-green btn-sm" href="http://portal.saudedafamilia.org/ASF/Home/Index"
+                target="_blank">Acessar Portal de Serviços ↗</a>
+            </div>
+          </div>
+
+          <div class="notice">
+            <span class="notice-tag">Redes Sociais e Ambiente</span>
+            <p>Reforçamos as orientações sobre o uso responsável do ambiente de trabalho e das redes sociais. Leia as
+              diretrizes.</p>
+            <div class="notice-action">
+              <a class="btn btn-green btn-sm" href="http://portal.saudedafamilia.org/ASF/Home/Index" target="_blank">Ver
+                Orientações ↗</a>
+            </div>
+          </div>
+
+          <div class="notice">
+            <span class="notice-tag">Contencioso Trabalhista — Ed. 19</span>
+            <p>19ª edição — "Atos de indisciplina – regras e convivência". Acesse e fique por dentro das diretrizes.</p>
+            <div class="notice-action">
+              <a class="btn btn-green btn-sm" href="http://portal.saudedafamilia.org/ASF/Home/Index"
+                target="_blank">Acessar Informativo ↗</a>
+            </div>
+          </div>
+
+          <div class="notice">
+            <span class="notice-tag">Clínica de Psicologia ASF</span>
+            <p>Contatos: <strong>3662-4275</strong> / <strong>97527-4436</strong> / <strong>99250-8175</strong></p>
+            <div class="notice-action">
+              <button class="btn btn-green btn-sm" onclick="goPage('psicologia')">Saiba Mais →</button>
+            </div>
+          </div>
+
+          <div class="notice">
+            <span class="notice-tag">Inscrição — Curso</span>
+            <p>Curso aberto para todos os funcionários da ASF. Antes de se inscrever, verifique disponibilidade com sua
+              chefia imediata.</p>
+            <div class="notice-action">
+              <a class="btn btn-green btn-sm"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScw9CqADwsgYvRv-4IwQAL7p-vcW1R8c3NBMxqVO3jIVmA_Rw/viewform"
+                target="_blank">Link para Inscrição ↗</a>
+            </div>
+          </div>
 
           <div class="divider"></div>
           <div class="btn-group">
@@ -509,7 +566,56 @@
           target="_blank">📈 Relatório por Idade ↗</a>
       </div>
       <div class="section-title">Status Mensal 2025</div>
-      <div class="grid-4" id="meses-container"></div>
+      <div class="grid-4">
+        <div class="month-card">
+          <div class="month-name">Janeiro</div>
+          <div class="month-status status-done">✔ Fechado</div>
+        </div>
+        <div class="month-card">
+          <div class="month-name">Fevereiro</div>
+          <div class="month-status status-done">✔ Fechado</div>
+        </div>
+        <div class="month-card">
+          <div class="month-name">Março</div>
+          <div class="month-status status-done">✔ Fechado</div>
+        </div>
+        <div class="month-card">
+          <div class="month-name">Abril</div>
+          <div class="month-status status-done">✔ Fechado</div>
+        </div>
+        <div class="month-card">
+          <div class="month-name">Maio</div>
+          <div class="month-status status-wip">⏳ Em andamento</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Junho</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Julho</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Agosto</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Setembro</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Outubro</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Novembro</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+        <div class="month-card" style="opacity:.45">
+          <div class="month-name">Dezembro</div>
+          <div class="month-status status-pend">– Pendente</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -968,564 +1074,6 @@
   </footer>
 
   <script src="js/script.js"></script>
-
-  <!-- ══════════════════════════════════════════
-       TOAST
-  ══════════════════════════════════════════ -->
-  <div id="admin-toast"></div>
-
-  <!-- ══════════════════════════════════════════
-       MODAL DE LOGIN
-  ══════════════════════════════════════════ -->
-  <div class="adm-overlay" id="loginOverlay" onclick="closeLoginOutside(event)">
-    <div class="adm-login-box">
-      <div class="adm-login-logo">⚙️</div>
-      <h2 class="adm-login-title">Acesso Administrativo</h2>
-      <p class="adm-login-sub">INTRANET — UBS Elisa Maria II</p>
-      <div class="adm-form-group">
-        <label>Usuário</label>
-        <input type="text" id="login-user" placeholder="Digite seu usuário" autocomplete="off">
-      </div>
-      <div class="adm-form-group">
-        <label>Senha</label>
-        <input type="password" id="login-pass" placeholder="Digite sua senha" onkeydown="if(event.key==='Enter')doLogin()">
-      </div>
-      <div id="login-error" class="adm-login-error" style="display:none">❌ Usuário ou senha incorretos.</div>
-      <button class="adm-login-btn" onclick="doLogin()">Entrar</button>
-      <button class="adm-login-cancel" onclick="closeLogin()">Cancelar</button>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════════════
-       PAINEL ADMIN
-  ══════════════════════════════════════════ -->
-  <div class="adm-overlay" id="adminOverlay" onclick="closeAdminOutside(event)">
-    <div class="adm-panel">
-
-      <div class="adm-header">
-        <div>
-          <div class="adm-header-title">⚙️ Painel Administrativo</div>
-          <div class="adm-header-sub">INTRANET UBS Elisa Maria II</div>
-        </div>
-        <div style="display:flex;gap:8px;align-items:center">
-          <button class="adm-logout-btn" onclick="doLogout()">Sair</button>
-          <button class="adm-close-btn" onclick="closeAdmin()">✕</button>
-        </div>
-      </div>
-
-      <div class="adm-tabs">
-        <div class="adm-tab active" onclick="adminTab('avisos')">📢 Avisos</div>
-        <div class="adm-tab" onclick="adminTab('noticias')">📰 Notícias</div>
-        <div class="adm-tab" onclick="adminTab('producao')">📊 Produção</div>
-      </div>
-
-      <div class="adm-body">
-
-        <!-- ABA: AVISOS -->
-        <div class="adm-section active" id="adm-avisos">
-          <div class="adm-add-box">
-            <h4 class="adm-add-title">➕ Adicionar Novo Aviso</h4>
-            <div class="adm-row-2">
-              <div class="adm-form-group">
-                <label>Categoria / Tag</label>
-                <input type="text" id="aviso-tag" placeholder="ex: RH, Treinamento, TI..." maxlength="40">
-              </div>
-              <div class="adm-form-group">
-                <label>Link do Botão (opcional)</label>
-                <input type="text" id="aviso-link" placeholder="https://...">
-              </div>
-            </div>
-            <div class="adm-form-group">
-              <label>Texto do Aviso</label>
-              <textarea id="aviso-texto" placeholder="Digite o conteúdo do aviso..."></textarea>
-            </div>
-            <div class="adm-form-group">
-              <label>Texto do Botão (opcional)</label>
-              <input type="text" id="aviso-btn" placeholder="ex: Acessar Portal ↗">
-            </div>
-            <button class="adm-btn-green" onclick="addAviso()">✔ Publicar Aviso</button>
-          </div>
-          <div class="adm-section-title">Avisos Publicados</div>
-          <div id="adm-avisos-list"></div>
-        </div>
-
-        <!-- ABA: NOTÍCIAS -->
-        <div class="adm-section" id="adm-noticias">
-          <div class="adm-add-box">
-            <h4 class="adm-add-title">➕ Adicionar Nova Notícia</h4>
-            <div class="adm-row-2">
-              <div class="adm-form-group">
-                <label>Categoria / Tag</label>
-                <input type="text" id="noticia-tag" placeholder="ex: Evento, Capacitação..." maxlength="40">
-              </div>
-              <div class="adm-form-group">
-                <label>Data</label>
-                <input type="text" id="noticia-data" placeholder="ex: Maio 2025">
-              </div>
-            </div>
-            <div class="adm-form-group">
-              <label>Título</label>
-              <input type="text" id="noticia-titulo" placeholder="Título da notícia">
-            </div>
-            <div class="adm-form-group">
-              <label>Texto</label>
-              <textarea id="noticia-texto" placeholder="Descreva o acontecimento..."></textarea>
-            </div>
-            <button class="adm-btn-green" onclick="addNoticia()">✔ Publicar Notícia</button>
-          </div>
-          <div class="adm-section-title">Notícias Publicadas</div>
-          <div id="adm-noticias-list"></div>
-        </div>
-
-        <!-- ABA: PRODUÇÃO -->
-        <div class="adm-section" id="adm-producao">
-          <div class="adm-add-box" style="background:#EEF3FA;border-color:rgba(0,51,102,0.2)">
-            <h4 class="adm-add-title" style="color:#003366">📊 Clique num mês para alterar o status</h4>
-            <div class="adm-legend">
-              <span><span class="adm-dot" style="background:#007A5E"></span>Fechado</span>
-              <span><span class="adm-dot" style="background:#e07a00"></span>Em andamento</span>
-              <span><span class="adm-dot" style="background:#ccc"></span>Pendente</span>
-            </div>
-            <div class="adm-meses-grid" id="adm-meses-toggles"></div>
-            <p style="font-size:11px;color:#6c757d;margin-top:8px">1 clique = Em andamento · 2 cliques = Fechado · 3 cliques = Pendente</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════════════
-       ESTILOS DO ADMIN (inline para não depender de arquivo externo)
-  ══════════════════════════════════════════ -->
-  <style>
-    /* BOTÃO HEADER */
-    .admin-header-btn {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.25);
-      border-radius: 6px;
-      padding: 6px 13px;
-      color: #fff;
-      font-size: 11px;
-      font-family: Arial, sans-serif;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background .15s;
-    }
-    .admin-header-btn:hover { background: rgba(255,255,255,0.22); }
-
-    /* TOAST */
-    #admin-toast {
-      position: fixed; bottom: 22px; right: 22px;
-      background: #003366; color: #fff;
-      padding: 10px 18px; border-radius: 8px;
-      font-size: 12px; font-family: Arial, sans-serif; font-weight: 700;
-      z-index: 9999; box-shadow: 0 4px 18px rgba(0,0,0,0.25);
-      transform: translateY(60px); opacity: 0;
-      transition: all .3s; pointer-events: none;
-    }
-    #admin-toast.show { transform: translateY(0); opacity: 1; }
-
-    /* OVERLAY */
-    .adm-overlay {
-      display: none; position: fixed; inset: 0; z-index: 1000;
-      background: rgba(0,20,51,0.6); backdrop-filter: blur(4px);
-      align-items: center; justify-content: center;
-    }
-    .adm-overlay.open { display: flex; }
-
-    /* LOGIN BOX */
-    .adm-login-box {
-      background: #fff; border-radius: 12px; padding: 32px 28px;
-      width: 100%; max-width: 360px; text-align: center;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    }
-    .adm-login-logo { font-size: 36px; margin-bottom: 10px; }
-    .adm-login-title { font-family: Arial, sans-serif; font-weight: 700; font-size: 18px; color: #003366; margin-bottom: 4px; }
-    .adm-login-sub { font-size: 11px; color: #6c757d; margin-bottom: 20px; font-family: Verdana, sans-serif; }
-    .adm-login-error { background: #fef0f0; border: 1px solid #fcc; border-radius: 6px; padding: 8px 12px; font-size: 11.5px; color: #9c1c1c; margin-bottom: 12px; font-family: Verdana, sans-serif; }
-    .adm-login-btn {
-      width: 100%; background: #007A5E; color: #fff;
-      border: none; border-radius: 6px; padding: 10px;
-      font-family: Arial, sans-serif; font-weight: 700; font-size: 13px;
-      cursor: pointer; margin-bottom: 8px; transition: opacity .15s;
-    }
-    .adm-login-btn:hover { opacity: .88; }
-    .adm-login-cancel {
-      width: 100%; background: none; border: 1px solid #ccd6e0;
-      border-radius: 6px; padding: 8px; font-size: 12px;
-      color: #6c757d; cursor: pointer; font-family: Verdana, sans-serif;
-    }
-    .adm-login-cancel:hover { background: #f8f9fa; }
-
-    /* PAINEL */
-    .adm-panel {
-      background: #fff; width: 100%; max-width: 860px;
-      border-radius: 12px; overflow: hidden;
-      box-shadow: 0 24px 60px rgba(0,0,0,0.3);
-      display: flex; flex-direction: column; max-height: 92vh;
-    }
-    .adm-header {
-      background: #003366; padding: 14px 20px;
-      display: flex; align-items: center; justify-content: space-between;
-      flex-shrink: 0;
-    }
-    .adm-header-title { font-family: Arial, sans-serif; font-weight: 700; font-size: 15px; color: #fff; }
-    .adm-header-sub { font-size: 10px; color: rgba(255,255,255,0.55); font-family: Verdana, sans-serif; }
-    .adm-logout-btn {
-      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25);
-      color: #fff; border-radius: 6px; padding: 5px 12px;
-      font-size: 11px; font-family: Arial, sans-serif; font-weight: 700; cursor: pointer;
-    }
-    .adm-logout-btn:hover { background: rgba(255,255,255,0.2); }
-    .adm-close-btn {
-      background: rgba(255,255,255,0.1); border: none; color: #fff;
-      width: 30px; height: 30px; border-radius: 6px; font-size: 16px;
-      cursor: pointer; display: flex; align-items: center; justify-content: center;
-    }
-    .adm-close-btn:hover { background: rgba(255,255,255,0.25); }
-
-    /* TABS */
-    .adm-tabs { display: flex; background: #f8f9fa; border-bottom: 1px solid rgba(0,51,102,0.12); flex-shrink: 0; }
-    .adm-tab {
-      padding: 10px 18px; font-family: Arial, sans-serif; font-weight: 700;
-      font-size: 11.5px; color: #6c757d; cursor: pointer;
-      border-bottom: 2px solid transparent; transition: color .15s;
-    }
-    .adm-tab:hover { color: #003366; }
-    .adm-tab.active { color: #003366; border-bottom-color: #007A5E; }
-
-    .adm-body { padding: 20px; overflow-y: auto; flex: 1; }
-    .adm-section { display: none; }
-    .adm-section.active { display: block; }
-
-    /* FORM */
-    .adm-form-group { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
-    .adm-form-group label { font-family: Arial, sans-serif; font-weight: 700; font-size: 11px; color: #003366; }
-    .adm-form-group input, .adm-form-group textarea {
-      border: 1px solid #ccd6e0; border-radius: 6px; padding: 8px 10px;
-      font-size: 12px; font-family: Verdana, sans-serif; color: #212529;
-      outline: none; background: #fff; transition: border-color .15s;
-    }
-    .adm-form-group input:focus, .adm-form-group textarea:focus { border-color: #007A5E; }
-    .adm-form-group textarea { resize: vertical; min-height: 70px; }
-    .adm-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-
-    .adm-add-box {
-      background: #f0faf6; border: 1px solid rgba(0,122,94,0.2);
-      border-radius: 8px; padding: 16px; margin-bottom: 20px;
-    }
-    .adm-add-title { font-family: Arial, sans-serif; font-weight: 700; font-size: 12px; color: #007A5E; margin-bottom: 12px; }
-    .adm-section-title {
-      font-family: Arial, sans-serif; font-weight: 700; font-size: 10.5px;
-      color: #007A5E; text-transform: uppercase; letter-spacing: .7px;
-      margin-bottom: 10px; padding-bottom: 6px;
-      border-bottom: 1px solid rgba(0,122,94,0.18);
-    }
-    .adm-btn-green {
-      background: #007A5E; color: #fff; border: none; border-radius: 6px;
-      padding: 8px 16px; font-family: Arial, sans-serif; font-weight: 700;
-      font-size: 11.5px; cursor: pointer; transition: opacity .15s;
-    }
-    .adm-btn-green:hover { opacity: .88; }
-
-    /* ITEM LIST */
-    .adm-item {
-      background: #f8f9fa; border: 1px solid rgba(0,51,102,0.12);
-      border-radius: 8px; padding: 12px 14px; margin-bottom: 10px;
-      display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
-    }
-    .adm-item-info { flex: 1; }
-    .adm-item-tag {
-      display: inline-block; font-size: 10px;
-      background: rgba(0,122,94,0.12); color: #007A5E;
-      padding: 2px 8px; border-radius: 20px;
-      font-family: Arial, sans-serif; font-weight: 700; margin-bottom: 4px;
-    }
-    .adm-item-text { font-size: 11.5px; color: #212529; line-height: 1.5; }
-    .adm-item-date { font-size: 10px; color: #6c757d; margin-top: 3px; }
-    .adm-item-del {
-      background: #fff0f0; border: 1px solid #fcc; border-radius: 6px;
-      padding: 5px 10px; font-size: 11px; font-family: Arial, sans-serif;
-      font-weight: 700; color: #c0392b; cursor: pointer; flex-shrink: 0; transition: background .15s;
-    }
-    .adm-item-del:hover { background: #fde; }
-    .adm-empty { text-align: center; padding: 24px; color: #6c757d; font-size: 12px; }
-    .adm-empty div { font-size: 28px; margin-bottom: 8px; }
-
-    /* MESES */
-    .adm-meses-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
-    .adm-mes-toggle {
-      border: 2px solid rgba(0,51,102,0.12); border-radius: 8px;
-      padding: 12px 8px; text-align: center; cursor: pointer;
-      transition: all .15s; background: #fff;
-    }
-    .adm-mes-toggle.done { border-color: #007A5E; background: #f0faf6; }
-    .adm-mes-toggle.wip  { border-color: #e07a00; background: #fff8f0; }
-    .adm-mes-name { font-family: Arial, sans-serif; font-weight: 700; font-size: 12px; color: #003366; }
-    .adm-mes-status { font-size: 10px; margin-top: 4px; }
-    .adm-mes-toggle.done .adm-mes-status { color: #007A5E; }
-    .adm-mes-toggle.wip  .adm-mes-status { color: #e07a00; }
-    .adm-mes-toggle:not(.done):not(.wip) .adm-mes-status { color: #6c757d; }
-
-    .adm-legend { display: flex; gap: 14px; margin-bottom: 12px; flex-wrap: wrap; }
-    .adm-legend span { font-size: 11px; color: #6c757d; display: flex; align-items: center; gap: 5px; font-family: Verdana, sans-serif; }
-    .adm-dot { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
-  </style>
-
-  <!-- ══════════════════════════════════════════
-       SCRIPT ADMIN
-  ══════════════════════════════════════════ -->
-  <script>
-    // ── CREDENCIAIS ──────────────────────────
-    const ADMIN_USER = 'admin';
-    const ADMIN_PASS = 'elisa2025';
-
-    // ── DADOS PADRÃO ─────────────────────────
-    const MESES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
-
-    const defaultAvisos = [
-      { id:1, tag:'Contencioso Trabalhista', texto:'22ª edição — "Valores de ética, respeito e compromisso institucional". Profissionais, acessem o informativo completo.', link:'https://docs.google.com/forms/d/e/1FAIpQLSdsy1M9MtdnxnPOBzyXsY5u_iSV0Q4iu7Yv8FU4Cr7qBQOpcw/viewform', btnTexto:'Acessar Informativo ↗' },
-      { id:2, tag:'Trilha do Funcionário', texto:'Seu espaço exclusivo no Portal de Serviços ASF — pensado para apoiar cada passo da sua jornada profissional.', link:'http://portal.saudedafamilia.org/ASF/Home/Index', btnTexto:'Acessar Portal de Serviços ↗' },
-      { id:3, tag:'Redes Sociais e Ambiente', texto:'Reforçamos as orientações sobre o uso responsável do ambiente de trabalho e das redes sociais. Leia as diretrizes.', link:'http://portal.saudedafamilia.org/ASF/Home/Index', btnTexto:'Ver Orientações ↗' },
-      { id:4, tag:'Contencioso Trabalhista — Ed. 19', texto:'19ª edição — "Atos de indisciplina – regras e convivência". Acesse e fique por dentro das diretrizes.', link:'http://portal.saudedafamilia.org/ASF/Home/Index', btnTexto:'Acessar Informativo ↗' },
-      { id:5, tag:'Clínica de Psicologia ASF', texto:'Contatos: 3662-4275 / 97527-4436 / 99250-8175', link:'', btnTexto:'' },
-      { id:6, tag:'Inscrição — Curso', texto:'Curso aberto para todos os funcionários da ASF. Antes de se inscrever, verifique disponibilidade com sua chefia imediata.', link:'https://docs.google.com/forms/d/e/1FAIpQLScw9CqADwsgYvRv-4IwQAL7p-vcW1R8c3NBMxqVO3jIVmA_Rw/viewform', btnTexto:'Link para Inscrição ↗' },
-    ];
-
-    const defaultNoticias = [
-      { id:10, tag:'Comunidade',    titulo:'Grupo Mexa-se', texto:'Atividades físicas, alongamentos e dinâmicas promovendo a saúde coletiva.', data:'Setembro 2025' },
-      { id:11, tag:'Educação & Saúde', titulo:'PSE — EMEI Bernardino', texto:'Programa Saúde na Escola levando ações preventivas aos alunos.', data:'Setembro 2025' },
-      { id:12, tag:'Melhor Idade',  titulo:'Grupo Melhor Idade', texto:'Encontro integrativo dedicado à terceira idade.', data:'Setembro 2025' },
-      { id:13, tag:'Saúde & Família', titulo:'Grupo Equipe 04', texto:'Ações direcionadas à comunidade atendida pela equipe de saúde da família 04.', data:'Setembro 2025' },
-    ];
-
-    const defaultMeses = { 0:'done',1:'done',2:'done',3:'done',4:'wip',5:'',6:'',7:'',8:'',9:'',10:'',11:'' };
-
-    // ── PERSISTÊNCIA ──────────────────────────
-    function load(key, def) {
-      try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : def; }
-      catch(e) { return def; }
-    }
-    function save(key, val) {
-      try { localStorage.setItem(key, JSON.stringify(val)); } catch(e) {}
-    }
-
-    let avisos   = load('elisa_avisos',   defaultAvisos);
-    let noticias = load('elisa_noticias', defaultNoticias);
-    let meses    = load('elisa_meses',    defaultMeses);
-    let nextId   = load('elisa_nid',      200);
-
-    // ── RENDER SITE ──────────────────────────
-    function renderAvisos() {
-      const c = document.getElementById('avisos-container');
-      if (!c) return;
-      c.innerHTML = avisos.length === 0
-        ? '<p style="font-size:12px;color:#6c757d;padding:8px 0">Nenhum aviso publicado.</p>'
-        : avisos.map(a => `
-          <div class="notice">
-            <span class="notice-tag">${esc(a.tag)}</span>
-            <p>${esc(a.texto)}</p>
-            ${a.link && a.btnTexto ? `<div class="notice-action"><a class="btn btn-green btn-sm" href="${esc(a.link)}" target="_blank">${esc(a.btnTexto)}</a></div>` : ''}
-          </div>`).join('');
-    }
-
-    function renderMeses() {
-      const c = document.getElementById('meses-container');
-      if (!c) return;
-      c.innerHTML = MESES.map((m, i) => {
-        const s = meses[i] || '';
-        const label = s === 'done' ? '✔ Fechado' : s === 'wip' ? '⏳ Em andamento' : '– Pendente';
-        const cls   = s === 'done' ? 'done' : s === 'wip' ? 'wip' : '';
-        const op    = cls ? '' : 'style="opacity:.45"';
-        return `<div class="month-card ${cls}" ${op}><div class="month-name">${m}</div><div class="month-status status-${s||'pend'}">${label}</div></div>`;
-      }).join('');
-    }
-
-    // ── RENDER ADMIN ─────────────────────────
-    function renderAdmAvisos() {
-      const c = document.getElementById('adm-avisos-list');
-      if (!c) return;
-      c.innerHTML = avisos.length === 0
-        ? '<div class="adm-empty"><div>📭</div>Nenhum aviso cadastrado.</div>'
-        : avisos.map(a => `
-          <div class="adm-item">
-            <div class="adm-item-info">
-              <span class="adm-item-tag">${esc(a.tag)}</span>
-              <div class="adm-item-text">${esc(a.texto)}</div>
-              ${a.link ? `<div class="adm-item-date">🔗 ${esc(a.link)}</div>` : ''}
-            </div>
-            <button class="adm-item-del" onclick="delAviso(${a.id})">🗑 Remover</button>
-          </div>`).join('');
-    }
-
-    function renderAdmNoticias() {
-      const c = document.getElementById('adm-noticias-list');
-      if (!c) return;
-      c.innerHTML = noticias.length === 0
-        ? '<div class="adm-empty"><div>📭</div>Nenhuma notícia cadastrada.</div>'
-        : noticias.map(n => `
-          <div class="adm-item">
-            <div class="adm-item-info">
-              <span class="adm-item-tag">${esc(n.tag)}</span>
-              <div class="adm-item-text"><strong>${esc(n.titulo||'')}</strong>${n.titulo ? ' — ' : ''}${esc(n.texto)}</div>
-              <div class="adm-item-date">📅 ${esc(n.data)}</div>
-            </div>
-            <button class="adm-item-del" onclick="delNoticia(${n.id})">🗑 Remover</button>
-          </div>`).join('');
-    }
-
-    function renderAdmMeses() {
-      const c = document.getElementById('adm-meses-toggles');
-      if (!c) return;
-      c.innerHTML = MESES.map((m, i) => {
-        const s = meses[i] || '';
-        const label = s === 'done' ? '✔ Fechado' : s === 'wip' ? '⏳ Em andamento' : '– Pendente';
-        const cls   = s === 'done' ? 'done' : s === 'wip' ? 'wip' : '';
-        return `<div class="adm-mes-toggle ${cls}" onclick="toggleMes(${i})"><div class="adm-mes-name">${m}</div><div class="adm-mes-status">${label}</div></div>`;
-      }).join('');
-    }
-
-    // ── AÇÕES ────────────────────────────────
-    function addAviso() {
-      const tag  = document.getElementById('aviso-tag').value.trim();
-      const txt  = document.getElementById('aviso-texto').value.trim();
-      const link = document.getElementById('aviso-link').value.trim();
-      const btn  = document.getElementById('aviso-btn').value.trim();
-      if (!tag || !txt) { toast('⚠️ Preencha categoria e texto.'); return; }
-      avisos.unshift({ id: nextId++, tag, texto: txt, link, btnTexto: btn });
-      save('elisa_avisos', avisos); save('elisa_nid', nextId);
-      document.getElementById('aviso-tag').value = '';
-      document.getElementById('aviso-texto').value = '';
-      document.getElementById('aviso-link').value = '';
-      document.getElementById('aviso-btn').value = '';
-      renderAvisos(); renderAdmAvisos();
-      toast('✅ Aviso publicado!');
-    }
-
-    function delAviso(id) {
-      avisos = avisos.filter(a => a.id !== id);
-      save('elisa_avisos', avisos);
-      renderAvisos(); renderAdmAvisos();
-      toast('🗑 Aviso removido.');
-    }
-
-    function addNoticia() {
-      const tag   = document.getElementById('noticia-tag').value.trim();
-      const tit   = document.getElementById('noticia-titulo').value.trim();
-      const txt   = document.getElementById('noticia-texto').value.trim();
-      const data  = document.getElementById('noticia-data').value.trim();
-      if (!tag || !txt) { toast('⚠️ Preencha categoria e texto.'); return; }
-      noticias.unshift({ id: nextId++, tag, titulo: tit, texto: txt, data: data || 'Sem data' });
-      save('elisa_noticias', noticias); save('elisa_nid', nextId);
-      document.getElementById('noticia-tag').value = '';
-      document.getElementById('noticia-titulo').value = '';
-      document.getElementById('noticia-texto').value = '';
-      document.getElementById('noticia-data').value = '';
-      renderAdmNoticias();
-      toast('✅ Notícia publicada!');
-    }
-
-    function delNoticia(id) {
-      noticias = noticias.filter(n => n.id !== id);
-      save('elisa_noticias', noticias);
-      renderAdmNoticias();
-      toast('🗑 Notícia removida.');
-    }
-
-    function toggleMes(i) {
-      const cur = meses[i] || '';
-      meses[i] = cur === '' ? 'wip' : cur === 'wip' ? 'done' : '';
-      save('elisa_meses', meses);
-      renderMeses(); renderAdmMeses();
-      const label = meses[i] === 'done' ? 'Fechado' : meses[i] === 'wip' ? 'Em andamento' : 'Pendente';
-      toast(`✔ ${MESES[i]}: ${label}`);
-    }
-
-    // ── LOGIN ────────────────────────────────
-    function openAdminLogin() {
-      document.getElementById('login-user').value = '';
-      document.getElementById('login-pass').value = '';
-      document.getElementById('login-error').style.display = 'none';
-      document.getElementById('loginOverlay').classList.add('open');
-      document.body.style.overflow = 'hidden';
-      setTimeout(() => document.getElementById('login-user').focus(), 100);
-    }
-
-    function closeLogin() {
-      document.getElementById('loginOverlay').classList.remove('open');
-      document.body.style.overflow = '';
-    }
-
-    function closeLoginOutside(e) {
-      if (e.target === document.getElementById('loginOverlay')) closeLogin();
-    }
-
-    function doLogin() {
-      const u = document.getElementById('login-user').value.trim();
-      const p = document.getElementById('login-pass').value;
-      if (u === ADMIN_USER && p === ADMIN_PASS) {
-        closeLogin();
-        openAdmin();
-      } else {
-        document.getElementById('login-error').style.display = 'block';
-        document.getElementById('login-pass').value = '';
-        document.getElementById('login-pass').focus();
-      }
-    }
-
-    // ── PAINEL ───────────────────────────────
-    function openAdmin() {
-      renderAdmAvisos(); renderAdmNoticias(); renderAdmMeses();
-      document.getElementById('adminOverlay').classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeAdmin() {
-      document.getElementById('adminOverlay').classList.remove('open');
-      document.body.style.overflow = '';
-    }
-
-    function closeAdminOutside(e) {
-      if (e.target === document.getElementById('adminOverlay')) closeAdmin();
-    }
-
-    function doLogout() {
-      closeAdmin();
-      toast('👋 Sessão encerrada.');
-    }
-
-    function adminTab(name) {
-      document.querySelectorAll('.adm-tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.adm-section').forEach(s => s.classList.remove('active'));
-      const map = { avisos:0, noticias:1, producao:2 };
-      document.querySelectorAll('.adm-tab')[map[name]].classList.add('active');
-      document.getElementById('adm-' + name).classList.add('active');
-    }
-
-    // ── UTILITÁRIOS ──────────────────────────
-    function esc(s) {
-      return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-    }
-
-    let _toastTimer;
-    function toast(msg) {
-      const el = document.getElementById('admin-toast');
-      el.textContent = msg;
-      el.classList.add('show');
-      clearTimeout(_toastTimer);
-      _toastTimer = setTimeout(() => el.classList.remove('show'), 2800);
-    }
-
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') { closeAdmin(); closeLogin(); }
-    });
-
-    // ── INIT ─────────────────────────────────
-    renderAvisos();
-    renderMeses();
-  </script>
-
 </body>
 
 </html>
