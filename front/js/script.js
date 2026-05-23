@@ -1,10 +1,41 @@
 const pageMap = {
   inicio:0, tutoriais:1, territorio:2, aconteceu:3,
-  producao:4, aniversario:5, espaco:6, psicologia:7,
-  saude:8, seguranca:9, telefones:10, missao:11
+  producao:4, espaco:6, telefones:10, missao:11
 };
 
+function switchSubTab(tabId) {
+  // 1. Remove as classes ativas de todas as sub-abas e botões dentro da página Espaço Funcionário
+  document.querySelectorAll('#pg-espaco .subtab-content').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('#pg-espaco .subtab-btn').forEach(b => b.classList.remove('active'));
+
+  // 2. Ativa o contêiner de conteúdo da sub-aba selecionada
+  const targetContent = document.getElementById(tabId);
+  if (targetContent) {
+    targetContent.classList.add('active');
+  }
+
+  // 3. Ativa o botão da sub-aba correspondente
+  const targetBtn = document.querySelector(`#pg-espaco .subtab-btn[onclick*="${tabId}"]`);
+  if (targetBtn) {
+    targetBtn.classList.add('active');
+  }
+}
+
 function goPage(id) {
+  // Redireciona IDs de páginas antigas consolidadas para as novas sub-abas dinâmicas do Espaço Funcionário
+  const redirectMap = {
+    'aniversario': 'sub-aniversariantes',
+    'psicologia': 'sub-psicologia',
+    'saude': 'sub-saude',
+    'seguranca': 'sub-seguranca'
+  };
+
+  let targetSubTab = null;
+  if (redirectMap[id]) {
+    targetSubTab = redirectMap[id];
+    id = 'espaco';
+  }
+
   // 1. Oculta todas as páginas do site
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   
@@ -27,6 +58,19 @@ function goPage(id) {
       const dropbtn = parentDropdown.querySelector('.nav-dropbtn');
       if (dropbtn) {
         dropbtn.classList.add('active');
+      }
+    }
+  }
+
+  // Se a página de destino for o Espaço Funcionário
+  if (id === 'espaco') {
+    if (targetSubTab) {
+      switchSubTab(targetSubTab);
+    } else {
+      // Se acessado diretamente, garante que tenhamos pelo menos uma sub-aba ativa (default: Sistemas & RH)
+      const activeTab = document.querySelector('#pg-espaco .subtab-content.active');
+      if (!activeTab) {
+        switchSubTab('sub-sistemas');
       }
     }
   }
